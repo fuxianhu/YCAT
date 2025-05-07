@@ -1,0 +1,18 @@
+{
+    "window_alpha": 1.0,
+    "window_x": 1500,
+    "window_y": 750,
+    "language": "en-US",
+    "language_text": "English (US)",
+    "Ignore operating system restrictions": false,
+    "Ignore operating system version restrictions": false,
+    "List of allowed operating system versions": [
+        "10",
+        "11",
+        "7",
+        "8"
+    ],
+    "DEBUG": false,
+    "Disable logging": false,
+    "Prohibit program startup": false
+}
