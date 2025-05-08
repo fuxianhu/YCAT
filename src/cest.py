@@ -51,7 +51,7 @@ class CEST:
         
         # Excel
         self.excel_path = asksaveasfilename(title=lang['open_excel_save_folder'], filetypes=[('Excel', '*.xlsx')])
-        wb = Workbook()
+        wb = openpyxl.Workbook()
         ws = wb.active  # 获取默认的工作表
         
         ws['a1'] = "学生姓名"

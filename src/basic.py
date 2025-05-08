@@ -31,35 +31,56 @@ import multiprocessing
 import platform
 import pprint
 
-VERSION = "0.1.9.20250427_Beta"
+
+"""
+VERSION 版本（号）
+格式如下：
+x.x.x.xxxxxxxx_xxxxxxxxxx
+版本  日期      类型
+例如：
+1.0.0.21000101_RC
+
+RC即 Release Candidate
+"""
+
+VERSION = "0.1.9.20250507_Alpha"
 
 
 
-
-
-
-# 获取当前脚本的目录 E:\YFY\YCAT\src
+# 获取当前脚本的目录，例如 E:\YFY\YCAT\src
 folder = Path(__file__).parent.resolve().as_posix()
 
 
 
+"""
+----------解析、检查、保存JSON文件----------
+"""
 
-
-def ParseJSON(file_path):
+def ParseJSON(filePath: str):
     """
     解析JSON文件
     """
-    with open(file_path, 'r', encoding='utf-8') as jsonFile:
+    with open(filePath, 'r', encoding='utf-8') as jsonFile:
         return json.load(jsonFile)
 
 
+def jsonParseAndCheck(jsonFilePath: str, saveType= dict) -> Any:
+    """
+    解析并检查其类型的 json 格式文件
+    抛出异常或返回对应类型的数据
+    类型检查的类型默认为 dict (字典)
+    """
+    jsonData = ParseJSON(jsonFilePath)
+    if type(jsonData) != saveType:
+        ERROR_TEXT = f"YFYCAT: {jsonFilePath}.json is not a {str(saveType)}."
+        log(type=logging.CRITICAL, text=ERROR_TEXT, popup=False)
+        raise TypeError(ERROR_TEXT)
+    return jsonData
 
-jsonSettings = ParseJSON(f'{folder}/config/CatSettings.json')
-languageData = ParseJSON(f"{folder}/config/LanguageData.json")
-downloadsConfig = ParseJSON(f'{folder}/config/Downloads.json')
-if type(downloadsConfig) != dict:
-    log(type=logging.CRITICAL, text="YFYCAT: Downloads.json is not a dict.", popup=False)
-    raise TypeError("YFYCAT: Downloads.json is not a dict.")
+
+jsonSettings = jsonParseAndCheck(f'{folder}/config/CatSettings.json')
+languageData = jsonParseAndCheck(f"{folder}/config/LanguageData.json")
+downloadsConfig = jsonParseAndCheck(f'{folder}/config/Downloads.json')
 
 
 def SaveJSON(data, file_path= f'{folder}/config/CatSettings.json') -> None:
@@ -75,7 +96,9 @@ if type(jsonSettings) != dict:
 
 
 
-# 读取语言文件
+"""
+----------读取语言文件并确定窗口标题----------
+"""
 
 def read_section_to_dict(config_file, section_name, encoding='utf-8') -> dict[str, str]:
     """读取配置文件中的指定节，并返回键值对字典"""
@@ -93,11 +116,13 @@ def read_section_to_dict(config_file, section_name, encoding='utf-8') -> dict[st
 
 lang = read_section_to_dict(f"{folder}/language/{jsonSettings['language']}.conf", "language")
 
-
-
-
 title = f"{lang['title']} {VERSION}"
 
+
+
+"""
+----------自定义一个讲稿窗口，重启程序流程----------
+"""
 
 def showWarningOkCancel(title=None, message=None, **options) -> bool:
     """

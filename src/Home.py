@@ -6,8 +6,7 @@ from basic import *
 from cest import CEST
 import os
 import gc
-# 垃圾回收功能 
-# gc.collect()
+
 
 
 class Home:

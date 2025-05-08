@@ -160,6 +160,6 @@ class MultiThreadDownloader:
         downloader.start()
 
 
-    def exit_downloads(self, event=None):
-        pass
+    # def exit_downloads(self, event=None):
+    #     pass
 

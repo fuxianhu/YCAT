@@ -8,6 +8,9 @@ class Personalization:
 
 
     def entry_insert(self) -> None:
+        """
+        预先在输入框中插入默认值
+        """
         self.window_alpha_entry.insert(0, str(jsonSettings['window_alpha']))
         self.window_x_entry.insert(0, str(jsonSettings['window_x']))
         self.window_y_entry.insert(0, str(jsonSettings['window_y']))

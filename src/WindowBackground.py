@@ -1,7 +1,7 @@
 import typing
 from tkinter import *
 from PIL import Image, ImageTk
-
+from basic import *
 
 class WindowBackground:
     """
@@ -10,10 +10,10 @@ class WindowBackground:
 
     def __init__(self, win: typing.Union[Tk, Toplevel]) -> None:
         self.root = win
-        self.backgroundImage = None
-        self.last_width = 0
-        self.last_height = 0
-        self.resize_threshold = 20  # 设置一个阈值，只有当窗口大小变化超过这个阈值时才进行图片处理
+        self.backgroundImage = jsonSettings["window"]["backgroundImage"]
+        self.last_width = jsonSettings["window"]["resizeThreshold"]
+        self.last_height = jsonSettings["window"]["lastWidth"]
+        self.resize_threshold = jsonSettings["window"]["lastHidth"]  # 阈值，只有当窗口大小变化超过这个阈值时才进行图片处理
 
 
     def setBackgroundColor(self, color: str = 'lightblue') -> None:

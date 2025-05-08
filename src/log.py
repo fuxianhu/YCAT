@@ -1,3 +1,5 @@
+# 注意！请勿导入basic.py，否则会出现循环导入的问题。
+
 from rich.console import Console
 console = Console()
 
@@ -7,8 +9,8 @@ import datetime
 
 
 def log(
-        type=logging.DEBUG,
-        text="Log text",
+        type: int =logging.DEBUG,
+        text: str ="Log text",
         popup=None,           # 弹出窗口
         popup_title=None,     # 弹出窗口标题
         popup_text=None,      # 弹出窗口文本内容

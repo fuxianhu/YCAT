@@ -7,7 +7,8 @@ from basic import *
 if __name__ != '__main__':
     os._exit(1)
 
-
+# （节省内存）垃圾回收功能 
+# gc.collect()
 
 # os.system("CLS") # 清屏
 
