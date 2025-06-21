@@ -2,8 +2,8 @@
     "window_alpha": 1.0,
     "window_x": 1500,
     "window_y": 750,
-    "language": "en-US",
-    "language_text": "English (US)",
+    "language": "zh-CN",
+    "language_text": "\u7b80\u4f53\u4e2d\u6587",
     "Ignore operating system restrictions": false,
     "Ignore operating system version restrictions": false,
     "List of allowed operating system versions": [
@@ -14,5 +14,11 @@
     ],
     "DEBUG": false,
     "Disable logging": false,
-    "Prohibit program startup": false
+    "Prohibit program startup": false,
+    "window": {
+        "backgroundImage": null,
+        "resizeThreshold": 20,
+        "lastWidth": 0,
+        "lastHidth": 0
+    }
 }

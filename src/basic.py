@@ -2,49 +2,49 @@
 基础
 """
 
-from typing import *
-from tkinter import *
-import tkinter.ttk as ttk
+
+
 from tkinter.filedialog import *
 from tkinter.messagebox import *
-import tkinter.messagebox
-
-from pathlib import Path
-import subprocess
-from urllib.parse import urlparse, unquote
-from queue import Queue
+from pyautogui import *
+from tkinter import *
+from typing import *
 from log import *
+from urllib.parse import urlparse, unquote
+from functools import partial
+import tkinter.messagebox
+import tkinter.ttk as ttk
 from pathlib import Path
+from queue import Queue
 import openpyxl
+import subprocess
+import configparser
+import multiprocessing
 import json
-
 import os
 import sys
 import requests
 import threading
 import getpass
 import ctypes
-
-import configparser
+import typing
 import toml
-
-import multiprocessing
+import time
+import psutil
 import platform
 import pprint
-from functools import partial
+
 
 """
-VERSION 版本（号）
+VERSION 版本
 格式如下：
 x.x.x.xxxxxxxx_xxxxxxxxxx
 版本  日期      类型
 例如：
 1.0.0.21000101_RC
-
-RC即 Release Candidate
 """
 
-VERSION = "0.2.0.20250621_Alpha"
+VERSION = "0.2.1.20250621_Alpha"
 
 
 
@@ -128,7 +128,7 @@ title = f"{lang['title']} {VERSION}"
 
 
 """
-----------自定义一个讲稿窗口，重启程序流程----------
+----------自定义一个警告窗口，程序自重启功能----------
 """
 
 def showWarningOkCancel(title=None, message=None, **options) -> bool:

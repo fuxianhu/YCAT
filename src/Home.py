@@ -2,16 +2,14 @@
 测试功能暂时不对外开放
 """
 
-import typing
-from tkinter import *
+
 from WindowBackground import WindowBackground
 from personalization import Personalization
-from basic import *
-from cest import CEST
-import os
-import gc
 from practicalFunctions import *
 from AutoGUI import AutoGUI
+from cest import CEST
+from basic import *
+
 
 
 
@@ -28,48 +26,71 @@ class Home:
 
 
     def enter(self) -> None:
+        """ 初始化窗口 """
         self.root.title(f"{title} - {lang['home']}")
         self.wb = WindowBackground(self.root)
         self.personalization = Personalization(self)
         self.autoGUI = AutoGUI(self)
-        # wb.setBackgroundImageWithResize()
         self.wb.setBackgroundColor()
+
+
+        """ 创建Button控件并绑定快捷键 """
         self.personalization_btn = Button(self.root, text=lang['personalization'], command=self.enterPersonalization)
         self.personalization_btn.pack()
+        self.root.bind('<Control-p>', self.enterPersonalization)
+        self.root.bind('<Control-P>', self.enterPersonalization)
 
         self.autoGUI_btn = Button(self.root, text=lang['auto_gui_button'], command=self.enterAutoGUI)
         self.autoGUI_btn.pack()
         self.root.bind('<Control-g>', self.enterAutoGUI)
         self.root.bind('<Control-G>', self.enterAutoGUI)
 
-        # self.cest_btn = Button(self.root, text=lang['cest'], command=self.enterCest)
-        # self.cest_btn.pack()
-        self.root.bind('<Control-p>', self.enterPersonalization)
-        self.root.bind('<Control-P>', self.enterPersonalization)
-        # self.root.bind('<Control-e>', self.enterCest)
-        # self.root.bind('<Control-E>', self.enterCest)
-        
         self.exit_btn = Button(self.root, text=lang['exit'], command=self.exit_cat)
         self.exit_btn.pack()
         self.root.bind('<Escape>', self.exit_cat)
 
+        self.godModBtn = Button(self.root, text=lang['god_mod_button'], command=self.openGodMod)
+        self.godModBtn.pack()
+        self.root.bind('<Control-g>', self.openGodMod)
+        self.root.bind('<Control-G>', self.openGodMod)
+
+        self.clearLogBtn = Button(self.root, text=lang['clear_log_button'], command=self.clearLog)
+        self.clearLogBtn.pack()
+        self.root.bind('<Control-l>', self.clearLog)
+        self.root.bind('<Control-L>', self.clearLog)
+
+        """ 菜单 """
         self.mainMenu = Menu(self.root)
         self.root['menu'] = self.mainMenu
+
+        """ 菜单选项 - 设置 """
+        # 1. 【获取语言】并【获取/src/language/xx-xx_Settings.json文件】
         self.mnuSettings = Menu(self.mainMenu, tearoff=False)
         self.mainMenu.add_cascade(label="设置", menu=self.mnuSettings)
         settingsJson = getSettingsJson()
+        self.mnuSettings.add_command(label=lang['open_settings'], command=lambda: hotkey('win', 'i'))
+
+        # 2. 遍历json文件，使其内容添加到菜单中。
         self.settingsArr = []
-        # self.settings2Arr = []
-        # log(type=logging.INFO, text=settingsJson)
         for key, value in settingsJson.items():
             self.settingsArr.append(Menu(self.mnuSettings, tearoff=False))
             head = len(self.settingsArr) - 1
             self.mnuSettings.add_cascade(label=key, menu=self.settingsArr[head])
-            # self.mnuSettings.add_cascade(self.settingsArr[head])
             for option in value:
+                try:
+                    self.settingsArr[head].add_command(label=option[0], accelerator=option[1], command=partial(os.system, "start " + option[1]))
+                except Exception as e:
+                    log(logging.ERROR, popup=False, text=f'{str(e)} | read settingsJson:' + settingsJson, output_console=False)
 
-                self.settingsArr[head].add_command(label=option[0], accelerator=option[2], command=partial(os.system, "start " + option[1]))
-        
+
+
+
+    def openGodMod(self, event= None):
+        """
+        打开上帝模式
+        访问几乎所有的系统设置和控制面板选项
+        """
+        os.system('start shell:::{ED7BA470-8E54-465E-825C-99712043E01C}')
 
 
     def enterCest(self, event= None):
@@ -121,3 +142,10 @@ class Home:
         """
         self.clear()
         self.autoGUI.enter()
+
+
+    def clearLog(self, event= None) -> NoReturn:
+        """
+        清空日志
+        """
+        clear_log_folder()

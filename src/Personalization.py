@@ -50,7 +50,7 @@ class Personalization:
         del s
         self.op = StringVar()
         self.op.set(jsonSettings['language_text'])
-        self.cmb = Combobox(self.root, textvariable=self.op)
+        self.cmb = ttk.Combobox(self.root, textvariable=self.op)
         self.cmb['values'] = [i[1] for i in languageData['language']]
         self.cmb.place(anchor=NW, x= 5, y= 70)
 

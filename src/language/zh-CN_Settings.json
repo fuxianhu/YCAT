@@ -1,399 +1,720 @@
 {
-    "1. 系统设置": [
+    "账户": [
         [
-            "显示",
-            "ms-settings:display",
-            "设置显示器、分辨率、方向、缩放等"
-        ],
-        [
-            "声音",
-            "ms-settings:sound",
-            "调整音量、输入设备、输出设备等"
-        ],
-        [
-            "通知",
-            "ms-settings:notifications",
-            "管理通知和操作中心"
-        ],
-        [
-            "电池",
-            "ms-settings:batterysaver",
-            "电池节能模式和电池使用情况"
-        ],
-        [
-            "电源与睡眠",
-            "ms-settings:powersleep",
-            "设置电源管理选项，睡眠模式等"
-        ],
-        [
-            "存储",
-            "ms-settings:storage",
-            "查看和管理存储设备、清理磁盘"
-        ],
-        [
-            "多任务",
-            "ms-settings:multitasking",
-            "设置任务栏、窗口排列等"
-        ]
-    ],
-    "2. 个性化设置": [
-        [
-            "背景",
-            "ms-settings:personalization-background",
-            "设置桌面背景和锁屏背景"
-        ],
-        [
-            "颜色",
-            "ms-settings:personalization-colors",
-            "设置主题颜色、透明效果等"
-        ],
-        [
-            "锁屏",
-            "ms-settings:lockscreen",
-            "设置锁屏屏幕背景、显示的内容等"
-        ],
-        [
-            "字体",
-            "ms-settings:personalization-fonts",
-            "设置字体、字号等"
-        ],
-        [
-            "开始菜单",
-            "ms-settings:personalization-start",
-            "设置开始菜单的显示和布局"
-        ],
-        [
-            "任务栏",
-            "ms-settings:taskbar",
-            "设置任务栏外观和功能"
-        ]
-    ],
-    "3. 设备设置": [
-        [
-            "打印机与扫描仪",
-            "ms-settings:printers",
-            "管理打印机和扫描仪设备"
-        ],
-        [
-            "蓝牙与其他设备",
-            "ms-settings:bluetooth",
-            "管理蓝牙设备和其他外部设备"
-        ],
-        [
-            "输入",
-            "ms-settings:devices-keyboard",
-            "设置键盘、鼠标、手写等输入设备"
-        ],
-        [
-            "相机",
-            "ms-settings:privacy-webcam",
-            "管理相机权限与设置"
-        ],
-        [
-            "USB设备",
-            "ms-settings:devices-usb",
-            "查看和管理 USB 设备"
-        ]
-    ],
-    "4. 网络和互联网": [
-        [
-            "Wi-Fi",
-            "ms-settings:wifi",
-            "管理无线网络连接"
-        ],
-        [
-            "以太网",
-            "ms-settings:ethernet",
-            "设置以太网连接和网络适配器"
-        ],
-        [
-            "数据使用",
-            "ms-settings:datausage",
-            "查看和管理数据使用情况"
-        ],
-        [
-            "飞行模式",
-            "ms-settings:airplanemode",
-            "开启或关闭飞行模式"
-        ],
-        [
-            "VPN",
-            "ms-settings:vpn",
-            "配置和管理虚拟专用网络 (VPN)"
-        ],
-        [
-            "网络和共享中心",
-            "ms-settings:network-status",
-            "查看网络连接状态和诊断"
-        ]
-    ],
-    "5. 隐私设置": [
-        [
-            "常规",
-            "ms-settings:privacy-general",
-            "控制隐私设置，如应用权限等"
-        ],
-        [
-            "位置",
-            "ms-settings:privacy-location",
-            "设置位置访问权限"
-        ],
-        [
-            "相机",
-            "ms-settings:privacy-webcam",
-            "控制应用访问相机的权限"
-        ],
-        [
-            "麦克风",
-            "ms-settings:privacy-microphone",
-            "控制应用访问麦克风的权限"
-        ],
-        [
-            "文件系统",
-            "ms-settings:privacy-documents",
-            "控制应用访问文件的权限"
-        ],
-        [
-            "通讯录",
-            "ms-settings:privacy-contacts",
-            "管理应用访问通讯录的权限"
-        ]
-    ],
-    "6. 账户设置": [
-        [
-            "账户",
-            "ms-settings:accounts",
-            "管理用户账户设置、登录选项"
-        ],
-        [
-            "登录选项",
-            "ms-settings:sign-in-options",
-            "设置 PIN、密码、面部识别等登录方式"
-        ],
-        [
-            "家庭和其他用户",
-            "ms-settings:otherusers",
-            "管理家庭成员和其他用户"
+            "连接工作或学校账户",
+            "ms-settings:workplace"
         ],
         [
             "电子邮件和账户",
-            "ms-settings:emailandaccounts",
-            "配置和管理电子邮件账户及连接的帐户"
+            "ms-settings:emailandaccounts"
+        ],
+        [
+            "其他用户",
+            "ms-settings:otherusers"
+        ],
+        [
+            "家庭",
+            "ms-settings:family-group"
+        ],
+        [
+            "登录选项",
+            "ms-settings:signinoptions"
+        ],
+        [
+            "动态锁（离开时自动锁定设备）",
+            "ms-settings:signinoptions-dynamiclock"
+        ],
+        [
+            "Windows备份",
+            "ms-settings:backup"
+        ],
+        [
+            "Windows Hello 设置",
+            "ms-settings:signinoptions-launchfaceenrollment"
+        ],
+        [
+            "账户信息",
+            "ms-settings:yourinfo"
         ]
     ],
-    "7. 时间和语言设置": [
+    "应用和功能": [
         [
-            "日期和时间",
-            "ms-settings:datetime",
-            "设置日期、时间、时区等"
+            "安装的应用",
+            "ms-settings:appsfeatures"
         ],
         [
-            "语言",
-            "ms-settings:language",
-            "设置显示语言、输入法等"
+            "可打开网站的应用",
+            "ms-settings:appsforwebsites"
         ],
         [
-            "语音",
-            "ms-settings:speech",
-            "配置语音识别、语音合成等功能"
+            "默认应用",
+            "ms-settings:defaultapps"
         ],
         [
-            "区域",
-            "ms-settings:region",
-            "设置地区、区域格式等"
+            "管理可选功能",
+            "ms-settings:optionalfeatures"
+        ],
+        [
+            "离线地图",
+            "ms-settings:maps"
+        ],
+        [
+            "启动应用",
+            "ms-settings:startupapps"
+        ],
+        [
+            "视频播放",
+            "ms-settings:videoplayback"
         ]
     ],
-    "8. 更新与安全": [
+    "设备": [
         [
-            "Windows 更新",
-            "ms-settings:windowsupdate",
-            "检查更新、设置自动更新"
+            "自动播放",
+            "ms-settings:autoplay"
         ],
         [
-            "恢复",
-            "ms-settings:recovery",
-            "恢复系统、重置计算机等"
+            "蓝牙",
+            "ms-settings:bluetooth"
         ],
         [
-            "安全性",
-            "ms-settings:security",
-            "设置安全相关选项，如防火墙等"
+            "已连接设备",
+            "ms-settings:connecteddevices"
         ],
         [
-            "激活",
-            "ms-settings:activation",
-            "查看和管理 Windows 激活状态"
+            "默认相机",
+            "ms-settings:camera"
         ],
         [
-            "恢复出厂设置",
-            "ms-settings:reset",
-            "重置电脑至出厂设置"
+            "相机设置",
+            "ms-settings:camera"
+        ],
+        [
+            "鼠标和触摸板",
+            "ms-settings:mousetouchpad"
+        ],
+        [
+            "笔和 Windows Ink",
+            "ms-settings:pen"
+        ],
+        [
+            "打印机和扫描仪",
+            "ms-settings:printers"
+        ],
+        [
+            "触摸",
+            "ms-settings:devices-touch"
+        ],
+        [
+            "触摸板",
+            "ms-settings:devices-touchpad"
+        ],
+        [
+            "文本建议",
+            "ms-settings:devicestyping-hwkbtextsuggestions"
+        ],
+        [
+            "键入",
+            "ms-settings:typing"
+        ],
+        [
+            "USB",
+            "ms-settings:usb"
+        ],
+        [
+            "滚轮",
+            "ms-settings:wheel"
+        ],
+        [
+            "手机连接",
+            "ms-settings:mobile-devices"
+        ],
+        [
+            "移动设备",
+            "ms-settings:mobile-devices"
+        ],
+        [
+            "设备使用情况",
+            "ms-settings:deviceusage"
         ]
     ],
-    "9. 辅助功能": [
+    "轻松使用": [
         [
-            "辅助功能",
-            "utilman.exe",
-            "打开辅助功能设置"
+            "音频",
+            "ms-settings:easeofaccess-audio"
         ],
         [
-            "屏幕阅读器",
-            "ms-settings:easeofaccess-narrator",
-            "启用屏幕阅读器"
+            "隐藏式字幕",
+            "ms-settings:easeofaccess-closedcaptioning"
         ],
         [
-            "放大镜",
-            "ms-settings:easeofaccess-magnifier",
-            "启用屏幕放大镜"
+            "颜色滤镜",
+            "ms-settings:easeofaccess-colorfilter"
+        ],
+        [
+            "在显示器上显示较暖的颜色以帮助睡眠",
+            "ms-settings:easeofaccess-colorfilter-bluelightlink"
+        ],
+        [
+            "显示",
+            "ms-settings:easeofaccess-display"
+        ],
+        [
+            "眼球控制",
+            "ms-settings:easeofaccess-eyecontrol"
+        ],
+        [
+            "字体",
+            "ms-settings:fonts"
         ],
         [
             "高对比度",
-            "ms-settings:easeofaccess-highcontrast",
-            "设置高对比度显示"
-        ],
-        [
-            "语音识别",
-            "ms-settings:easeofaccess-speech",
-            "设置语音识别功能"
+            "ms-settings:easeofaccess-highcontrast"
         ],
         [
             "键盘",
-            "ms-settings:easeofaccess-keyboard",
-            "配置键盘快捷键和输入法"
+            "ms-settings:easeofaccess-keyboard"
+        ],
+        [
+            "放大镜",
+            "ms-settings:easeofaccess-magnifier"
         ],
         [
             "鼠标",
-            "ms-settings:easeofaccess-mouse",
-            "设置鼠标功能，如光标大小"
+            "ms-settings:easeofaccess-mouse"
+        ],
+        [
+            "鼠标指针和触摸",
+            "ms-settings:easeofaccess-mousepointer"
+        ],
+        [
+            "讲述人",
+            "ms-settings:easeofaccess-narrator"
+        ],
+        [
+            "在登录后启动讲述人",
+            "ms-settings:easeofaccess-narrator-isautostartenabled"
+        ],
+        [
+            "语音",
+            "ms-settings:easeofaccess-speechrecognition"
+        ],
+        [
+            "文本光标",
+            "ms-settings:easeofaccess-cursor"
+        ],
+        [
+            "视觉效果",
+            "ms-settings:easeofaccess-visualeffects"
         ]
     ],
-    "10. Windows 11 独有的 URI 设置": [
+    "游戏": [
         [
-            "任务栏设置",
-            "ms-settings:taskbar",
-            "在 Windows 11 中，任务栏的设置功能有所扩展，例如新的任务栏对齐选项（居中对齐）"
+            "游戏栏",
+            "ms-settings:gaming-gamebar"
         ],
         [
-            "虚拟桌面设置",
-            "ms-settings:multitasking",
-            "虚拟桌面的支持和配置方式有所变化，Windows 11 提供了更强的多桌面管理选项"
+            "游戏 DVR",
+            "ms-settings:gaming-gamedvr"
         ],
         [
-            "开始菜单调整",
-            "ms-settings:personalization-start",
-            "Windows 11 引入了新的开始菜单设计和功能，更多的个性化选项"
+            "游戏模式",
+            "ms-settings:gaming-gamemode"
         ],
         [
-            "Windows Snap 设置",
-            "ms-settings:multitasking",
-            "Windows 11 引入了更多的窗口捕捉和分屏选项，可以设置窗口排列等"
-        ],
-        [
-            "触摸键盘设置",
-            "ms-settings:devices",
-            "Windows 11 增强了触摸输入选项，增加了新的触摸键盘设置"
-        ],
-        [
-            "文件资源管理器",
-            "ms-settings:explorer",
-            "Windows 11 引入了文件资源管理器的新界面和功能，支持更多的文件查看选项"
+            "全屏游戏",
+            "ms-settings:quietmomentsgame"
         ]
     ],
-    "新的功能与设置 URI（仅 Windows 11）": [
+    "主页": [
         [
-            "系统主题与外观",
-            "ms-settings:themes",
-            "Windows 11 在外观方面增加了更多的主题选项，包括动态壁纸、暗黑模式等，且系统主题界面有更新。"
+            "默认浏览器设置",
+            "ms-settings:defaultbrowsersettings"
         ],
         [
-            "透明效果设置",
-            "ms-settings:personalization",
-            "Windows 11 默认启用透明效果，用户可以更容易地调整透明玻璃效果和其他视觉效果。"
+            "音频和语音",
+            "ms-settings:holographic-audio"
         ],
         [
-            "窗口管理和分屏",
-            "ms-settings:multitasking",
-            "Windows 11 强化了 Snap 布局功能，允许用户通过鼠标悬停窗口最大化按钮来选择分屏布局。"
+            "卸载",
+            "ms-settings:holographic-management"
         ],
         [
-            "应用商店",
-            "ms-settings:apps",
-            "ms-settings:apps",
-            "Windows 11 提升了 Microsoft Store 体验，改进了支持更多的应用和内容，提供更好的搜索与分类功能。"
+            "启动和桌面",
+            "ms-settings:holographic-startupandesktop"
         ],
         [
-            "任务视图和虚拟桌面",
-            "ms-settings:multitasking",
-            "Windows 11 中虚拟桌面（Task View）支持更多的自定义，用户可以创建不同的桌面环境并进行名称管理。"
+            "网络和 Internet",
+            "ms-settings:network-status"
         ],
         [
-            "Microsoft Edge",
-            "ms-settings:apps",
-            "在 Windows 11 中，Microsoft Edge 浏览器的设置和配置管理更为独立，支持更多的边缘功能集成。"
+            "高级网络设置",
+            "ms-settings:network-advancedsettings"
         ],
         [
-            "桌面壁纸与设置",
-            "ms-settings:personalization-background",
-            "Windows 11 增强了对动态壁纸和更多外部资源的支持。"
+            "飞行模式",
+            "ms-settings:network-airplanemode"
         ],
         [
-            "动态更新与自动更新",
-            "ms-settings:windowsupdate",
-            "Windows 11 提供了更强的更新和修复管理功能，允许用户更多选择来管理更新的时间和方式。"
+            "蜂窝网络和 SIM 卡",
+            "ms-settings:network-cellular"
         ],
         [
-            "多语言输入法设置",
-            "ms-settings:language",
-            "Windows 11 改进了语言支持，特别是对不同语言之间的切换和输入法设置的用户体验。"
+            "拨号",
+            "ms-settings:network-dialup"
         ],
         [
-            "支持 ARM 设备设置",
-            "ms-settings:device",
-            "对 ARM 设备的支持进一步增强，包含针对 ARM 架构优化的设置和更新管理。"
+            "以太网",
+            "ms-settings:network-ethernet"
+        ],
+        [
+            "管理已知网络",
+            "ms-settings:network-wifisettings"
+        ],
+        [
+            "移动热点",
+            "ms-settings:network-mobilehotspot"
+        ],
+        [
+            "代理",
+            "ms-settings:network-proxy"
+        ],
+        [
+            "VPN",
+            "ms-settings:network-vpn"
+        ],
+        [
+            "WLAN",
+            "ms-settings:network-wifi"
         ]
     ],
-    "增强的个性化与 UI/UX 设置（Windows 11 独有）": [
+    "个性化": [
         [
-            "开始菜单设计与功能",
-            "ms-settings:personalization-start",
-            "Windows 11 的开始菜单采用了更简洁的居中设计，支持更多磁贴的固定与调整。"
+            "个性化",
+            "ms-settings:personalization"
         ],
         [
-            "图标与任务栏布局",
-            "ms-settings:taskbar",
-            "任务栏图标可以选择居中对齐，还可以更方便地对图标进行排列。Windows 11 支持更多的动态任务栏功能。"
+            "背景",
+            "ms-settings:personalization-background"
         ],
         [
-            "窗口阴影和边框效果",
-            "ms-settings:personalization",
-            "Windows 11 增强了窗口阴影、边框效果和动画，创建了更精致的窗口过渡效果。"
+            "选择开始菜单显示的文件夹",
+            "ms-settings:personalization-start-places"
         ],
         [
-            "触摸和手势设置",
-            "ms-settings:devices",
-            "Windows 11 更加注重触摸屏和手势操作，优化了针对触控设备的交互体验。"
+            "颜色",
+            "ms-settings:personalization-colors"
+        ],
+        [
+            "概览",
+            "ms-settings:personalization-glance"
+        ],
+        [
+            "锁屏界面",
+            "ms-settings:lockscreen"
+        ],
+        [
+            "导航栏",
+            "ms-settings:personalization-navbar"
+        ],
+        [
+            "开始",
+            "ms-settings:personalization-start"
+        ],
+        [
+            "任务栏",
+            "ms-settings:taskbar"
+        ],
+        [
+            "触摸键盘",
+            "ms-settings:personalization-touchkeyboard"
+        ],
+        [
+            "主题",
+            "ms-settings:themes"
         ]
     ],
-    "其它新功能与设置（仅 Windows 11）": [
+    "隐私": [
         [
-            "蓝牙快速配对功能",
-            "ms-settings:bluetooth",
-            "Windows 11 引入了对更多蓝牙设备的快速配对和设置管理功能，支持新的蓝牙标准。"
+            "配件应用",
+            "ms-settings:privacy-accessoryapps"
         ],
         [
-            "游戏设置",
-            "ms-settings:gaming",
-            "Windows 11 更加注重游戏体验，改进了 Xbox 集成，支持更多的游戏优化选项。"
+            "账户信息",
+            "ms-settings:privacy-accountinfo"
         ],
         [
-            "硬件加速设置、系统性能优化",
-            "ms-settings:performance",
-            "Windows 11 提供了更多硬件加速选项，特别是针对游戏和创意应用程序，Windows 11 提供了更多的自动性能优化和资源管理选项，帮助提升设备运行效率。"
+            "活动历史记录",
+            "ms-settings:privacy-activityhistory"
         ],
         [
-            "隐私和安全设置",
-            "ms-settings:privacy",
-            "隐私设置方面，Windows 11 提供了更多基于云的隐私保护机制和跨设备的数据同步控制。"
+            "广告 ID",
+            "ms-settings:privacy-advertisingid"
+        ],
+        [
+            "应用诊断",
+            "ms-settings:privacy-appdiagnostics"
+        ],
+        [
+            "自动文件下载",
+            "ms-settings:privacy-automaticfiledownloads"
+        ],
+        [
+            "后台应用",
+            "ms-settings:privacy-backgroundapps"
+        ],
+        [
+            "后台空间感知",
+            "ms-settings:privacy-backgroundspatialperception"
+        ],
+        [
+            "日历",
+            "ms-settings:privacy-calendar"
+        ],
+        [
+            "通话记录",
+            "ms-settings:privacy-callhistory"
+        ],
+        [
+            "相机",
+            "ms-settings:privacy-webcam"
+        ],
+        [
+            "联系人",
+            "ms-settings:privacy-contacts"
+        ],
+        [
+            "文档",
+            "ms-settings:privacy-documents"
+        ],
+        [
+            "下载文件夹",
+            "ms-settings:privacy-downloads folder"
+        ],
+        [
+            "电子邮件",
+            "ms-settings:privacy-email"
+        ],
+        [
+            "眼动追踪",
+            "ms-settings:privacy-eyetracker"
+        ],
+        [
+            "反馈和诊断",
+            "ms-settings:privacy-feedback"
+        ],
+        [
+            "文件系统",
+            "ms-settings:privacy-broadfilesystemaccess"
+        ],
+        [
+            "常规",
+            "ms-settings:privacy"
+        ],
+        [
+            "图形",
+            "ms-settings:privacy-graphicscaptureprogrammatic"
+        ],
+        [
+            "屏幕截图边框（设置访问权限）",
+            "ms-settings:privacy-graphicscapturewithoutborder"
+        ],
+        [
+            "墨迹书写和键入",
+            "ms-settings:privacy-speechtyping"
+        ],
+        [
+            "位置",
+            "ms-settings:privacy-location"
+        ],
+        [
+            "消息",
+            "ms-settings:privacy-messaging"
+        ],
+        [
+            "麦克风",
+            "ms-settings:privacy-microphone"
+        ],
+        [
+            "运动",
+            "ms-settings:privacy-motion"
+        ],
+        [
+            "音乐库",
+            "ms-settings:privacy-musiclibrary"
+        ],
+        [
+            "通知",
+            "ms-settings:privacy-notifications"
+        ],
+        [
+            "其他设备",
+            "ms-settings:privacy-customdevices"
+        ],
+        [
+            "电话",
+            "ms-settings:privacy-phonecalls"
+        ],
+        [
+            "图片",
+            "ms-settings:privacy-pictures"
+        ],
+        [
+            "无线电",
+            "ms-settings:privacy-radios"
+        ],
+        [
+            "语音",
+            "ms-settings:privacy-speech"
+        ],
+        [
+            "任务",
+            "ms-settings:privacy-tasks"
+        ],
+        [
+            "视频",
+            "ms-settings:privacy-videos"
+        ],
+        [
+            "语音激活",
+            "ms-settings:privacy-voiceactivation"
+        ]
+    ],
+    "搜索": [
+        [
+            "搜索",
+            "ms-settings:search"
+        ],
+        [
+            "搜索更多详情",
+            "ms-settings:search-moredetails"
+        ],
+        [
+            "搜索权限",
+            "ms-settings:search-permissions"
+        ]
+    ],
+    "系统": [
+        [
+            "关于",
+            "ms-settings:about"
+        ],
+        [
+            "高级显示设置",
+            "ms-settings:display-advanced"
+        ],
+        [
+            "应用音量和设备首选项",
+            "ms-settings:apps-volume"
+        ],
+        [
+            "电池节电模式",
+            "ms-settings:batterysaver"
+        ],
+        [
+            "电池节电模式设置",
+            "ms-settings:batterysaver-settings"
+        ],
+        [
+            "电池使用情况",
+            "ms-settings:batterysaver-usagedetails"
+        ],
+        [
+            "剪贴板",
+            "ms-settings:clipboard"
+        ],
+        [
+            "显示",
+            "ms-settings:display"
+        ],
+        [
+            "屏幕",
+            "ms-settings:screenrotation"
+        ],
+        [
+            "默认保存位置",
+            "ms-settings:savelocations"
+        ],
+        [
+            "复制我的显示器",
+            "ms-settings:quietmomentspresentation"
+        ],
+        [
+            "在这些时间段内",
+            "ms-settings:quietmomentsscheduled"
+        ],
+        [
+            "加密",
+            "ms-settings:deviceencryption"
+        ],
+        [
+            "专注",
+            "ms-settings:quiethours"
+        ],
+        [
+            "图形设置",
+            "ms-settings:display-advancedgraphics"
+        ],
+        [
+            "图形默认设置",
+            "ms-settings:display-advancedgraphics-default"
+        ],
+        [
+            "多任务处理",
+            "ms-settings:multitasking"
+        ],
+        [
+            "夜灯设置",
+            "ms-settings:nightlight"
+        ],
+        [
+            "投影到此电脑",
+            "ms-settings:projec"
+        ]
+    ],
+    "就近共享": [
+        [
+            "共享体验",
+            "ms-settings:crossdevice"
+        ],
+        [
+            "平板模式",
+            "ms-settings:tabletmode"
+        ],
+        [
+            "任务栏",
+            "ms-settings:taskbar"
+        ],
+        [
+            "通知和操作",
+            "ms-settings:notifications"
+        ],
+        [
+            "远程桌面",
+            "ms-settings:remotedesktop"
+        ],
+        [
+            "手机",
+            "ms-settings:phone"
+        ],
+        [
+            "电源和睡眠",
+            "ms-settings:powersleep"
+        ],
+        [
+            "声音",
+            "ms-settings:sound"
+        ],
+        [
+            "声音设备",
+            "ms-settings:sound-devices"
+        ],
+        [
+            "存储",
+            "ms-settings:storagesense"
+        ],
+        [
+            "存储感知",
+            "ms-settings:storagepolicies"
+        ],
+        [
+            "存储建议",
+            "ms-settings:storagerecommendations"
+        ],
+        [
+            "磁盘和卷",
+            "ms-settings:disksandvolumes"
+        ]
+    ],
+    "时间和语言": [
+        [
+            "日期和时间",
+            "ms-settings:dateandtime"
+        ],
+        [
+            "语言和区域",
+            "ms-settings:keyboard"
+        ],
+        [
+            "微软拼音输入法",
+            "ms-settings:regionlanguage-chsime-pinyin"
+        ],
+        [
+            "专业词典",
+            "ms-settings:regionlanguage-chsime-pinyin-domainlexicon"
+        ],
+        [
+            "按键（如中/英模式切换等热键）",
+            "ms-settings:regionlanguage-chsime-pinyin-keyconfig"
+        ],
+        [
+            "用户自定义短语",
+            "ms-settings:regionlanguage-chsime-pinyin-udp"
+        ],
+        [
+            "语音",
+            "ms-settings:speech"
+        ]
+    ],
+    "更新和安全": [
+        [
+            "激活",
+            "ms-settings:activation"
+        ],
+        [
+            "备份",
+            "ms-settings:backup"
+        ],
+        [
+            "传递优化",
+            "ms-settings:delivery-optimization"
+        ],
+        [
+            "查找我的设备",
+            "ms-settings:findmydevice"
+        ],
+        [
+            "面向开发人员",
+            "ms-settings:developers"
+        ],
+        [
+            "恢复",
+            "ms-settings:recovery"
+        ],
+        [
+            "启动安全密钥注册",
+            "ms-settings:signinoptions-launchsecuritykeyenrollment"
+        ],
+        [
+            "疑难解答",
+            "ms-settings:troubleshoot"
+        ],
+        [
+            "Windows 安全中心",
+            "ms-settings:windowsdefender"
+        ],
+        [
+            "Windows 预览体验计划",
+            "ms-settings:windowsinsider"
+        ],
+        [
+            "Windows 更新",
+            "ms-settings:windowsupdate"
+        ],
+        [
+            "Windows 更新-高级选项",
+            "ms-settings:windowsupdate-options"
+        ],
+        [
+            "Windows 更新-可选更新",
+            "ms-settings:windowsupdate-optionalupdates"
+        ],
+        [
+            "Windows 更新-计划重新启动",
+            "ms-settings:windowsupdate-restartoptions"
+        ],
+        [
+            "Windows 更新-更新历史记录",
+            "ms-settings:windowsupdate-history"
         ]
     ]
 }
