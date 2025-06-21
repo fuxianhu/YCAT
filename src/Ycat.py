@@ -1,6 +1,14 @@
 # YFY's comprehensive auxiliary tool
 # YCAT
 
+import os
+
+# 确保工作目录为当前脚本所在的目录：
+script_path = os.path.abspath(__file__) # 获取当前脚本文件的绝对路径
+script_dir = os.path.dirname(script_path) # 获取脚本所在目录
+os.chdir(script_dir) # 设置工作目录
+
+
 from Home import Home
 from basic import *
 

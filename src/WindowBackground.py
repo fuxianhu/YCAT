@@ -19,25 +19,26 @@ class WindowBackground:
     def setBackgroundColor(self, color: str = 'lightblue') -> None:
         """
         直接设置窗口的颜色。比如'lightblue'为浅蓝色
-        :color: 该颜色的单词或短语 str对象
+        
+        color: 该颜色的单词或短语
         """
         self.root.configure(bg=color)
 
 
     def loadImage(self, image_path: str = '../image/a.jpeg'):
         """
-        使用PIL加载图片
-        :image_path: 图片路径，可以是绝对路径或相对路径（建议选择后者）。
-        :return: 返回一个元组，分别为Image.open函数的返回值、PhotoImage对象。
+        ### 使用PIL加载图片
+
+        返回一个元组，分别为Image.open函数的返回值、PhotoImage对象。
         """
         image = Image.open(image_path)
         photo = ImageTk.PhotoImage(image)
         return (photo, image)
 
+
     def setBackgroundImage(self, image_path: str = '../image/a.jpeg') -> None:
         """
         设置主窗口的背景图片，不做拉伸等操作
-        :image_path: 图片路径，可以是绝对路径或相对路径（建议选择后者）。
         """
         self.backgroundImage = self.loadImage(image_path)
         if self.backgroundImage[0] is not None:
@@ -47,6 +48,7 @@ class WindowBackground:
             self.background_label.place(x=0, y=0, relwidth=1, relheight=1)
         else:
             print("Failed to set background image.")
+
 
     def resize_image(self, event) -> None:
         """

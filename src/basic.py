@@ -4,12 +4,13 @@
 
 from typing import *
 from tkinter import *
-from tkinter.ttk import *
+import tkinter.ttk as ttk
 from tkinter.filedialog import *
 from tkinter.messagebox import *
 import tkinter.messagebox
 
 from pathlib import Path
+import subprocess
 from urllib.parse import urlparse, unquote
 from queue import Queue
 from log import *
@@ -30,7 +31,7 @@ import toml
 import multiprocessing
 import platform
 import pprint
-
+from functools import partial
 
 """
 VERSION 版本（号）
@@ -43,13 +44,19 @@ x.x.x.xxxxxxxx_xxxxxxxxxx
 RC即 Release Candidate
 """
 
-VERSION = "0.1.9.20250507_Alpha"
+VERSION = "0.2.0.20250621_Alpha"
 
 
 
 # 获取当前脚本的目录，例如 E:\YFY\YCAT\src
 folder = Path(__file__).parent.resolve().as_posix()
 
+logging.basicConfig(
+    filemode="w", 
+    filename=f"{os.path.dirname(folder)}/log/Ycat.log", 
+    level=logging.DEBUG, 
+    format="%(asctime)s (%(name)s) [%(levelname)s] %(message)s"
+)
 
 
 """
