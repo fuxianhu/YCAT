@@ -3,7 +3,10 @@
 """
 
 
-
+import csv
+from openpyxl import Workbook
+from openpyxl.utils import get_column_letter
+from openpyxl.styles import Font, Alignment, Border, Side, PatternFill
 from tkinter.filedialog import *
 from tkinter.messagebox import *
 from pyautogui import *
@@ -13,6 +16,7 @@ from log import *
 from urllib.parse import urlparse, unquote
 from functools import partial
 import tkinter.messagebox
+from tkinter.filedialog import *
 import tkinter.ttk as ttk
 from pathlib import Path
 from queue import Queue
@@ -33,7 +37,8 @@ import time
 import psutil
 import platform
 import pprint
-
+import shutil
+from math import *
 
 """
 VERSION 版本
@@ -44,12 +49,16 @@ x.x.x.xxxxxxxx_xxxxxxxxxx
 1.0.0.21000101_RC
 """
 
-VERSION = "0.2.1.20250621_Alpha"
+VERSION = "0.2.2.20250629_Alpha"
 
 
 
 # 获取当前脚本的目录，例如 E:\YFY\YCAT\src
 folder = Path(__file__).parent.resolve().as_posix()
+
+# 创建目录
+# 添加 exist_ok=True 参数可以避免目录已存在时报错
+os.makedirs(f"{os.path.dirname(folder)}/log/", exist_ok=True)
 
 logging.basicConfig(
     filemode="w", 
@@ -145,9 +154,10 @@ def showWarningOkCancel(title=None, message=None, **options) -> bool:
         **options
         )
 
-def restartProgram() -> NoReturn:
+def restartProgram(warning: bool= True) -> NoReturn:
     """
     重启程序
     """
-    if showWarningOkCancel(title=lang['restart_software_warning'], message=lang['restart_software_warning_message']):
-        os.execv(sys.executable, ['python'] + sys.argv)
+    if warning:
+        if showWarningOkCancel(title=lang['restart_software_warning'], message=lang['restart_software_warning_message']):
+            os.execv(sys.executable, ['python'] + sys.argv)
