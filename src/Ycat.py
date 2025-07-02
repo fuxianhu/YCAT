@@ -22,7 +22,7 @@ if __name__ != '__main__':
 
 def check_environment() -> None:
     """
-    环境检测
+    ### 环境检测
     包括操作系统、操作系统版本、重要文件等
     """
     # 判断当前操作系统的平台表示
@@ -33,13 +33,14 @@ def check_environment() -> None:
     if jsonSettings['Ignore operating system restrictions'] is False:
         os_name = platform.system()
         if os_name == 'Linux':
-            NOT_SUPPORTED = """Ycat may not support the current operating system. 
-         If you want to forcibly disable operating system restrictions, 
-         please bear all the consequences of this modification."""
             """
             翻译：
             Ycat可能不支持当前的操作系统。如果您想强制禁用操作系统限制，请承担此修改带来的所有后果。
             """
+            NOT_SUPPORTED = """Ycat may not support the current operating system. 
+         If you want to forcibly disable operating system restrictions, 
+         please bear all the consequences of this modification."""
+
             logging.log(level=logging.CRITICAL, msg=f"OS: {os_name}")
             raise OSError(NOT_SUPPORTED)
         elif os_name == 'Darwin':
@@ -61,16 +62,17 @@ def check_environment() -> None:
                 flag = False
                 break
         if flag:
+            """
+            翻译：
+            Ycat可能不支持此版本的操作系统。您可以尝试升级或降级操作系统，
+            修改允许的操作系统版本列表，或禁用操作系统版本限制。请自行承担后两种方法的后果。
+            """
             raise OSError("""Ycat may not support this version of the operating system. 
          You can try upgrading or downgrading the operating system, 
          modifying the allowed operating system version list, 
          or disabling the operating system version restrictions. 
          Please bear the consequences of the latter two methods.""")
-            """
-            翻译：
-            Ycat可能不支持此版本的操作系统。您可以尝试升级或降级操作系统，
-            修改允许的操作系统版本列表，或禁用操作系统版本限制。请承担后两种方法的后果。
-            """
+
 
 
 
@@ -78,15 +80,9 @@ check_environment()
 
 
 root = Tk()
-root.iconbitmap(f"{folder}/icon/tool.ico")
-root.geometry(f"{str(jsonSettings['window_x'])}x{str(jsonSettings['window_y'])}")
 
-# 设置窗口透明度
-root.attributes("-alpha", jsonSettings['window_alpha'])  # 设置窗口透明度，0.0为完全透明，1.0为不透明
-
+# 加载主页
 home = Home(root)
-
-
 
 root.mainloop()
 

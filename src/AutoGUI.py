@@ -6,7 +6,7 @@ from basic import *
 
 class AutoGUI():
     """
-    鼠标连点（包括GUI）
+    ### 鼠标连点（包括GUI）
 
     左、中、右键
     """
@@ -73,10 +73,14 @@ class AutoGUI():
         self.acBtn.pack(side=LEFT)
         self.acProgram = None
 
+        self.exitBtn = Button(self.home_instance.root, text=lang['exit'], command=self.exitAutoClick)
+        self.exitBtn.pack()
+        self.home_instance.root.bind('<Escape>', self.exitAutoClick)
+
 
     def startAC(self):
         """
-        开始自动点击
+        ### 开始自动点击
         """
         if self.acProgram is not None:
             self.acProgram.terminate()
@@ -96,8 +100,14 @@ class AutoGUI():
 
 
     def exitAutoClick(self, event= None):
-        pass
-
+        """
+        ### 退出
+        """
+        self.home_instance.root.unbind('<Escape>')
+        self.acFm.destroy()
+        self.exitBtn.destroy()
+        self.lb.destroy()
+        self.home_instance.enter()
 
 
 

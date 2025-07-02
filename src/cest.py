@@ -2,7 +2,7 @@ from basic import *
 
 class CEST:
     """
-    计算机考试评分工具
+    ### 计算机考试评分工具
     Computer Exam Scoring Tool
     """
 
@@ -27,13 +27,16 @@ class CEST:
         
 
     def exit_cest(self, event=None):
+        """
+        ### 退出CEST
+        """
         self.clear()
         self.home_instance.open_cest = False
 
 
     def clear(self):
         """
-        清除控件
+        ### 清除控件
         """
         self.win.unbind('<Escape>')
         self.win.destroy()
@@ -41,7 +44,7 @@ class CEST:
 
     def import_file(self):
         """
-        导入并解析文件、检查文件、计算分数、显示结果、将结果写入Execl里面。
+        ### 导入并解析文件、检查文件、计算分数、显示结果、将结果写入Execl里面。
         """
         cwd_folder = os.getcwd()
         

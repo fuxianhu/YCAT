@@ -4,10 +4,10 @@
 
 */
 
-// 考虑到部分编译器没有bits/stdc++.h，所以加到了/src/header/stdc++.h中
-#define bits / stdc++.h header / stdc++.h
+// // 考虑到部分编译器没有bits/stdc++.h，所以加到了/src/header/stdc++.h中
+// #define bits / stdc++.h header / stdc++.h
 
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 #include "algebra.hpp"
 
 #define IS_TIME true

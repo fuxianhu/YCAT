@@ -9,7 +9,7 @@ class Personalization:
 
     def entry_insert(self) -> None:
         """
-        预先在输入框中插入默认值
+        ### 预先在输入框中插入默认值
         """
         self.window_alpha_entry.insert(0, str(jsonSettings['window_alpha']))
         self.window_x_entry.insert(0, str(jsonSettings['window_x']))
@@ -18,7 +18,7 @@ class Personalization:
 
     def enter(self) -> None:
         """
-        进入个性化设置界面
+        ### 进入个性化设置界面
         """
         self.root.title(f'{title} - {lang["personalization"]}')
         self.exit_personalization_btn = Button(self.root, text=lang['return_without_saving_changes'], command=self.exitPersonalization)
@@ -65,7 +65,7 @@ class Personalization:
 
     def exitPersonalization(self, event= None) -> None:
         """
-        退出个性化设置界面
+        ### 退出个性化设置界面
         """
         self.exit_personalization_btn.destroy()
         self.save_btn.destroy()
@@ -88,7 +88,7 @@ class Personalization:
 
     def setJsonSettings(self) -> None:
         """
-        设置JSON
+        ### 设置`JSON`
         """
         try:
             alpha_value = float(self.window_alpha_entry.get())
@@ -137,7 +137,7 @@ class Personalization:
 
     def save(self, event= None) -> None:
         """
-        保存在个性化设置界面中所做的更改并重启程序
+        ### 保存在个性化设置界面中所做的更改并重启程序
         """
         self.setJsonSettings()
 
@@ -149,8 +149,8 @@ class Personalization:
 
     def restoreDefaultSettings(self, event= None) -> None:
         """
-        恢复默认设置并重启
-        将CatSettings.json的内容替换为DefaultCatSettings.json的内容
+        ### 恢复默认设置并重启
+        将`CatSettings.json`的内容**替换**为`DefaultCatSettings.json`的内容
         """
 
         SaveJSON(data=ParseJSON(f'{folder}/config/DefaultCatSettings.json'), file_path=f'{folder}/config/CatSettings.json')

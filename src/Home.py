@@ -1,4 +1,4 @@
-from WindowBackground import WindowBackground
+from WindowOperate import WindowBackground
 from personalization import Personalization
 from practicalFunctions import *
 from AutoGUI import AutoGUI
@@ -26,10 +26,10 @@ class Home:
         """
 
         """ 初始化窗口 """
-        self.root.title(f"{title} - {lang['home']}")
         self.wb = WindowBackground(self.root)
         self.personalization = Personalization(self)
         self.autoGUI = AutoGUI(self)
+        self.MinecraftLitematicaMaterialListCsvToExcelConverterInstance = MinecraftLitematicaMaterialListCsvToExcelConverter(self)
         self.wb.setBackgroundColor()
 
 
@@ -89,12 +89,11 @@ class Home:
         self.mainMenu.add_cascade(label=lang['common_options'], menu=self.mnuCommonOption)
         self.mnuCommonOption.add_command(
             label=lang['god_mod_button'], 
-            accelerator="Ctrl+G", 
+            accelerator="Ctrl+O", 
             command=self.openGodMod
         )
         self.root.bind('<Control-o>', self.openGodMod)
         self.root.bind('<Control-O>', self.openGodMod)
-        
 
         def openSystemProperties():
             subprocess.run(['systempropertiesadvanced.exe'], shell=True)
@@ -117,6 +116,22 @@ class Home:
         self.root.bind('<Control-E>', openEnvironmentVariable)
 
 
+        """ 菜单选项 - Minecraft """
+        self.mnuMinecraft = Menu(self.mainMenu, tearoff=False)
+        self.mainMenu.add_cascade(label=lang['minecraft'], menu=self.mnuMinecraft)
+        self.mnuMinecraft.add_command(
+            label=lang['minecraft_litematica_material_list_csv_to_excel_converter'], 
+            command=self.OpenMinecraftLitematicaMaterialListCsvToExcelConverter
+        )
+
+
+    def OpenMinecraftLitematicaMaterialListCsvToExcelConverter(self, event= None):
+        """
+        打开MinecraftLitematicaMaterialListCsvToExcelConverter的UI
+        """
+        self.MinecraftLitematicaMaterialListCsvToExcelConverterInstance.openUI()
+
+
     def openGodMod(self, event= None):
         """
         ### 打开上帝模式
@@ -137,7 +152,7 @@ class Home:
             del self.cest
 
 
-    def exit_cat(self, event= None) -> typing.NoReturn:
+    def exit_cat(self, event= None) -> NoReturn:
         """
         ### 退出YFYCAT
         """

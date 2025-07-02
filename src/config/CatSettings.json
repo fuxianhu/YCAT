@@ -1,7 +1,15 @@
 {
-    "window_alpha": 1.0,
-    "window_x": 1500,
-    "window_y": 750,
+    "window": 
+    {
+        "alpha": 1.0,
+        "length": 1500,
+        "width": 750,
+        "backgroundImage": null,
+        "resizeThreshold": 10,
+        "color": "#FFFFFF",
+        "mode": "color",
+        "icon": "./icon/tool.ico"
+    },
     "language": "zh-CN",
     "language_text": "\u7b80\u4f53\u4e2d\u6587",
     "Ignore operating system restrictions": false,
@@ -15,10 +23,9 @@
     "DEBUG": false,
     "Disable logging": false,
     "Prohibit program startup": false,
-    "window": {
-        "backgroundImage": null,
-        "resizeThreshold": 20,
-        "lastWidth": 0,
-        "lastHidth": 0
+    "Minecraft Litematica material list CSV to Excel converter":
+    {
+        "default csv file path": null,
+        "default excel save path": null
     }
 }
