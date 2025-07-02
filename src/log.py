@@ -1,11 +1,15 @@
-# 注意！请勿导入basic.py，否则会出现循环导入的问题。
+"""
 
-from rich.console import Console
-console = Console()
+注意！本文件已经被basic.py导入了，请勿导入basic.py，否则会出现循环导入的问题。
+
+"""
 
 import logging
 from tkinter.messagebox import *
 import datetime
+from rich.console import Console
+
+console = Console()
 
 
 def log(
@@ -18,9 +22,9 @@ def log(
         output_console: bool=True, # 是否输出至控制台
 ):
     """
-    ### 记录日志，也可以同时弹出窗口。
+    ### 记录日志，同时可以弹出窗口
 
-    参数解释：
+    参数（所有参数可选）：
     - `type`: **日志类型** 建议使用logging中的CRITICAL、FATAL、ERROR、WARNING、WARN、INFO、DEBUG、NOTSET等常量，
     - `text`: **日志文本**，字符串。默认值为"Log text",
     - `popup`: **是否弹出窗口**，空值或布尔值。
@@ -95,6 +99,6 @@ def log(
         poput_function(5)
 
     else:
-        # 参数错误
+        # 参数错误时
         logging.error(text)
         poput_function(4)

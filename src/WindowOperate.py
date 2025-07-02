@@ -3,6 +3,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 from basic import *
 
+
 class WindowBackground:
     """
     ### 控制一个窗口（例如主窗口、子窗口，即Tk对象、Toplevel对象）的背景颜色/图片等属性。
@@ -15,19 +16,19 @@ class WindowBackground:
     def __init__(self, win: Tk | Toplevel) -> None:
         self.root = win
         self.backgroundImage = jsonSettings["window"]["backgroundImage"]
-        self.last_length = jsonSettings["window"]["length"]
-        self.last_height = jsonSettings["window"]["width"]
+        self.last_length = jsonSettings["window"]["length"] # 调整前的窗口长度
+        self.last_height = jsonSettings["window"]["width"] # 调整前的窗口高度
         self.resize_threshold =  jsonSettings["window"]["resizeThreshold"] # 阈值，只有当窗口大小变化超过这个阈值时才进行图片处理
-        self.root.iconbitmap("./icon/tool.ico")
-        self.root.geometry(f"{str(jsonSettings['window']['length'])}x{str(jsonSettings['window']['width'])}")
-
-        # 设置窗口透明度，0.0为完全透明，1.0为不透明
-        self.root.attributes("-alpha", jsonSettings['window']['alpha'])
+        self.root.iconbitmap(jsonSettings["window"]["icon"]) # 设置图标
+        self.root.geometry(f"{str(jsonSettings['window']['length'])}x{str(jsonSettings['window']['width'])}") # 设置窗口大小
+        self.root.title(lang["title"]) # 设置窗口标题
+        self.root.attributes("-alpha", jsonSettings['window']['alpha']) # 设置窗口透明度，0.0为完全透明，1.0为不透明
+        self.root.resizable(jsonSettings['window']['Allow length adjustment'], jsonSettings['window']['Allow width adjustment']) # 允许/禁止调整窗口的长、高
 
 
     def setBackgroundColor(self, color= "#FFFFFF") -> None:
         """
-        直接设置窗口的颜色。
+        ### 直接设置窗口的颜色。
         
         `color`: 该颜色的单词或短语
         """

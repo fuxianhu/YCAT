@@ -1,3 +1,11 @@
+"""
+
+多线程下载器
+
+"""
+
+
+
 from basic import *
 from practicalFunctions import extractFilenameFromUrl
 

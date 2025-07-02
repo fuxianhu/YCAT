@@ -46,7 +46,6 @@ import sys
 import requests
 import threading
 import getpass
-import ctypes
 import typing
 import toml
 import time
@@ -68,7 +67,7 @@ x.x.x.xxxxxxxx_xxxxxxxxxx
 1.0.0.21000101_RC
 """
 
-VERSION = "0.2.3.20250702_Alpha"
+VERSION = "0.2.3.20250702_Beta"
 
 
 

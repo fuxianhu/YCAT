@@ -30,7 +30,6 @@ class Home:
         self.personalization = Personalization(self)
         self.autoGUI = AutoGUI(self)
         self.MinecraftLitematicaMaterialListCsvToExcelConverterInstance = MinecraftLitematicaMaterialListCsvToExcelConverter(self)
-        self.wb.setBackgroundColor()
 
 
         """ 创建Button控件并绑定快捷键 """
@@ -98,7 +97,7 @@ class Home:
         def openSystemProperties():
             subprocess.run(['systempropertiesadvanced.exe'], shell=True)
         self.mnuCommonOption.add_command(
-            label=lang['environment_variable_button'], 
+            label=lang['system_properties_button'], 
             accelerator="Ctrl+S", 
             command=openSystemProperties
         )

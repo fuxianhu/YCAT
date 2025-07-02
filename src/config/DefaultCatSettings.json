@@ -8,7 +8,9 @@
         "resizeThreshold": 10,
         "color": "#FFFFFF",
         "mode": "color",
-        "icon": "./icon/tool.ico"
+        "icon": "./icon/tool.ico",
+        "Allow length adjustment": true,
+        "Allow width adjustment": true
     },
     "language": "zh-CN",
     "language_text": "\u7b80\u4f53\u4e2d\u6587",

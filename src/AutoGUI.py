@@ -12,7 +12,6 @@ class AutoGUI():
     """
     def __init__(self, home_instance):
         self.home_instance = home_instance
-        self.home_instance.root.title(f'{title} - {lang["auto_gui"]}')
 
     
     def enter(self):

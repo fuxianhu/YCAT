@@ -1,0 +1,720 @@
+{
+    "Accounts": [
+        [
+            "Connect to a work or school account",
+            "ms-settings:workplace"
+        ],
+        [
+            "Email & accounts",
+            "ms-settings:emailandaccounts"
+        ],
+        [
+            "Other users",
+            "ms-settings:otherusers"
+        ],
+        [
+            "Family & other users",
+            "ms-settings:family-group"
+        ],
+        [
+            "Sign-in options",
+            "ms-settings:signinoptions"
+        ],
+        [
+            "Dynamic lock (automatically lock your device when you leave)",
+            "ms-settings:signinoptions-dynamiclock"
+        ],
+        [
+            "Windows backup",
+            "ms-settings:backup"
+        ],
+        [
+            "Windows Hello setup",
+            "ms-settings:signinoptions-launchfaceenrollment"
+        ],
+        [
+            "Your info",
+            "ms-settings:yourinfo"
+        ]
+    ],
+    "Apps & features": [
+        [
+            "Installed apps",
+            "ms-settings:appsfeatures"
+        ],
+        [
+            "Apps for websites",
+            "ms-settings:appsforwebsites"
+        ],
+        [
+            "Default apps",
+            "ms-settings:defaultapps"
+        ],
+        [
+            "Optional features",
+            "ms-settings:optionalfeatures"
+        ],
+        [
+            "Offline maps",
+            "ms-settings:maps"
+        ],
+        [
+            "Startup apps",
+            "ms-settings:startupapps"
+        ],
+        [
+            "Video playback",
+            "ms-settings:videoplayback"
+        ]
+    ],
+    "Devices": [
+        [
+            "Autoplay",
+            "ms-settings:autoplay"
+        ],
+        [
+            "Bluetooth",
+            "ms-settings:bluetooth"
+        ],
+        [
+            "Connected devices",
+            "ms-settings:connecteddevices"
+        ],
+        [
+            "Default camera",
+            "ms-settings:camera"
+        ],
+        [
+            "Camera settings",
+            "ms-settings:camera"
+        ],
+        [
+            "Mouse & touchpad",
+            "ms-settings:mousetouchpad"
+        ],
+        [
+            "Pen & Windows Ink",
+            "ms-settings:pen"
+        ],
+        [
+            "Printers & scanners",
+            "ms-settings:printers"
+        ],
+        [
+            "Touch",
+            "ms-settings:devices-touch"
+        ],
+        [
+            "Touchpad",
+            "ms-settings:devices-touchpad"
+        ],
+        [
+            "Text suggestions",
+            "ms-settings:devicestyping-hwkbtextsuggestions"
+        ],
+        [
+            "Typing",
+            "ms-settings:typing"
+        ],
+        [
+            "USB",
+            "ms-settings:usb"
+        ],
+        [
+            "Wheel",
+            "ms-settings:wheel"
+        ],
+        [
+            "Phone Link",
+            "ms-settings:mobile-devices"
+        ],
+        [
+            "Mobile devices",
+            "ms-settings:mobile-devices"
+        ],
+        [
+            "Device usage",
+            "ms-settings:deviceusage"
+        ]
+    ],
+    "Ease of Access": [
+        [
+            "Audio",
+            "ms-settings:easeofaccess-audio"
+        ],
+        [
+            "Closed captions",
+            "ms-settings:easeofaccess-closedcaptioning"
+        ],
+        [
+            "Color filters",
+            "ms-settings:easeofaccess-colorfilter"
+        ],
+        [
+            "Show warmer colors on display to help sleep",
+            "ms-settings:easeofaccess-colorfilter-bluelightlink"
+        ],
+        [
+            "Display",
+            "ms-settings:easeofaccess-display"
+        ],
+        [
+            "Eye control",
+            "ms-settings:easeofaccess-eyecontrol"
+        ],
+        [
+            "Fonts",
+            "ms-settings:fonts"
+        ],
+        [
+            "High contrast",
+            "ms-settings:easeofaccess-highcontrast"
+        ],
+        [
+            "Keyboard",
+            "ms-settings:easeofaccess-keyboard"
+        ],
+        [
+            "Magnifier",
+            "ms-settings:easeofaccess-magnifier"
+        ],
+        [
+            "Mouse",
+            "ms-settings:easeofaccess-mouse"
+        ],
+        [
+            "Mouse pointer & touch",
+            "ms-settings:easeofaccess-mousepointer"
+        ],
+        [
+            "Narrator",
+            "ms-settings:easeofaccess-narrator"
+        ],
+        [
+            "Start narrator after sign-in",
+            "ms-settings:easeofaccess-narrator-isautostartenabled"
+        ],
+        [
+            "Speech",
+            "ms-settings:easeofaccess-speechrecognition"
+        ],
+        [
+            "Text cursor",
+            "ms-settings:easeofaccess-cursor"
+        ],
+        [
+            "Visual effects",
+            "ms-settings:easeofaccess-visualeffects"
+        ]
+    ],
+    "Gaming": [
+        [
+            "Game bar",
+            "ms-settings:gaming-gamebar"
+        ],
+        [
+            "Game DVR",
+            "ms-settings:gaming-gamedvr"
+        ],
+        [
+            "Game Mode",
+            "ms-settings:gaming-gamemode"
+        ],
+        [
+            "Full-screen games",
+            "ms-settings:quietmomentsgame"
+        ]
+    ],
+    "Home": [
+        [
+            "Default browser settings",
+            "ms-settings:defaultbrowsersettings"
+        ],
+        [
+            "Audio & speech",
+            "ms-settings:holographic-audio"
+        ],
+        [
+            "Uninstall",
+            "ms-settings:holographic-management"
+        ],
+        [
+            "Startup & desktop",
+            "ms-settings:holographic-startupandesktop"
+        ],
+        [
+            "Network & Internet",
+            "ms-settings:network-status"
+        ],
+        [
+            "Advanced network settings",
+            "ms-settings:network-advancedsettings"
+        ],
+        [
+            "Airplane mode",
+            "ms-settings:network-airplanemode"
+        ],
+        [
+            "Cellular & SIM",
+            "ms-settings:network-cellular"
+        ],
+        [
+            "Dial-up",
+            "ms-settings:network-dialup"
+        ],
+        [
+            "Ethernet",
+            "ms-settings:network-ethernet"
+        ],
+        [
+            "Manage known networks",
+            "ms-settings:network-wifisettings"
+        ],
+        [
+            "Mobile hotspot",
+            "ms-settings:network-mobilehotspot"
+        ],
+        [
+            "Proxy",
+            "ms-settings:network-proxy"
+        ],
+        [
+            "VPN",
+            "ms-settings:network-vpn"
+        ],
+        [
+            "Wi-Fi",
+            "ms-settings:network-wifi"
+        ]
+    ],
+    "Personalization": [
+        [
+            "Personalization",
+            "ms-settings:personalization"
+        ],
+        [
+            "Background",
+            "ms-settings:personalization-background"
+        ],
+        [
+            "Choose which folders appear on Start",
+            "ms-settings:personalization-start-places"
+        ],
+        [
+            "Colors",
+            "ms-settings:personalization-colors"
+        ],
+        [
+            "Glance",
+            "ms-settings:personalization-glance"
+        ],
+        [
+            "Lock screen",
+            "ms-settings:lockscreen"
+        ],
+        [
+            "Navigation bar",
+            "ms-settings:personalization-navbar"
+        ],
+        [
+            "Start",
+            "ms-settings:personalization-start"
+        ],
+        [
+            "Taskbar",
+            "ms-settings:taskbar"
+        ],
+        [
+            "Touch keyboard",
+            "ms-settings:personalization-touchkeyboard"
+        ],
+        [
+            "Themes",
+            "ms-settings:themes"
+        ]
+    ],
+    "Privacy": [
+        [
+            "Accessory apps",
+            "ms-settings:privacy-accessoryapps"
+        ],
+        [
+            "Account info",
+            "ms-settings:privacy-accountinfo"
+        ],
+        [
+            "Activity history",
+            "ms-settings:privacy-activityhistory"
+        ],
+        [
+            "Advertising ID",
+            "ms-settings:privacy-advertisingid"
+        ],
+        [
+            "App diagnostics",
+            "ms-settings:privacy-appdiagnostics"
+        ],
+        [
+            "Automatic file downloads",
+            "ms-settings:privacy-automaticfiledownloads"
+        ],
+        [
+            "Background apps",
+            "ms-settings:privacy-backgroundapps"
+        ],
+        [
+            "Background spatial perception",
+            "ms-settings:privacy-backgroundspatialperception"
+        ],
+        [
+            "Calendar",
+            "ms-settings:privacy-calendar"
+        ],
+        [
+            "Call history",
+            "ms-settings:privacy-callhistory"
+        ],
+        [
+            "Camera",
+            "ms-settings:privacy-webcam"
+        ],
+        [
+            "Contacts",
+            "ms-settings:privacy-contacts"
+        ],
+        [
+            "Documents",
+            "ms-settings:privacy-documents"
+        ],
+        [
+            "Downloads folder",
+            "ms-settings:privacy-downloads folder"
+        ],
+        [
+            "Email",
+            "ms-settings:privacy-email"
+        ],
+        [
+            "Eye tracker",
+            "ms-settings:privacy-eyetracker"
+        ],
+        [
+            "Feedback & diagnostics",
+            "ms-settings:privacy-feedback"
+        ],
+        [
+            "File system",
+            "ms-settings:privacy-broadfilesystemaccess"
+        ],
+        [
+            "General",
+            "ms-settings:privacy"
+        ],
+        [
+            "Graphics",
+            "ms-settings:privacy-graphicscaptureprogrammatic"
+        ],
+        [
+            "Screenshot border (set access permissions)",
+            "ms-settings:privacy-graphicscapturewithoutborder"
+        ],
+        [
+            "Inking & typing",
+            "ms-settings:privacy-speechtyping"
+        ],
+        [
+            "Location",
+            "ms-settings:privacy-location"
+        ],
+        [
+            "Messaging",
+            "ms-settings:privacy-messaging"
+        ],
+        [
+            "Microphone",
+            "ms-settings:privacy-microphone"
+        ],
+        [
+            "Motion",
+            "ms-settings:privacy-motion"
+        ],
+        [
+            "Music library",
+            "ms-settings:privacy-musiclibrary"
+        ],
+        [
+            "Notifications",
+            "ms-settings:privacy-notifications"
+        ],
+        [
+            "Other devices",
+            "ms-settings:privacy-customdevices"
+        ],
+        [
+            "Phone calls",
+            "ms-settings:privacy-phonecalls"
+        ],
+        [
+            "Pictures",
+            "ms-settings:privacy-pictures"
+        ],
+        [
+            "Radios",
+            "ms-settings:privacy-radios"
+        ],
+        [
+            "Speech",
+            "ms-settings:privacy-speech"
+        ],
+        [
+            "Tasks",
+            "ms-settings:privacy-tasks"
+        ],
+        [
+            "Videos",
+            "ms-settings:privacy-videos"
+        ],
+        [
+            "Voice activation",
+            "ms-settings:privacy-voiceactivation"
+        ]
+    ],
+    "Search": [
+        [
+            "Search",
+            "ms-settings:search"
+        ],
+        [
+            "Search more details",
+            "ms-settings:search-moredetails"
+        ],
+        [
+            "Search permissions",
+            "ms-settings:search-permissions"
+        ]
+    ],
+    "System": [
+        [
+            "About",
+            "ms-settings:about"
+        ],
+        [
+            "Advanced display settings",
+            "ms-settings:display-advanced"
+        ],
+        [
+            "App volume & device preferences",
+            "ms-settings:apps-volume"
+        ],
+        [
+            "Battery saver",
+            "ms-settings:batterysaver"
+        ],
+        [
+            "Battery saver settings",
+            "ms-settings:batterysaver-settings"
+        ],
+        [
+            "Battery usage",
+            "ms-settings:batterysaver-usagedetails"
+        ],
+        [
+            "Clipboard",
+            "ms-settings:clipboard"
+        ],
+        [
+            "Display",
+            "ms-settings:display"
+        ],
+        [
+            "Screen",
+            "ms-settings:screenrotation"
+        ],
+        [
+            "Default save locations",
+            "ms-settings:savelocations"
+        ],
+        [
+            "Duplicate my display",
+            "ms-settings:quietmomentspresentation"
+        ],
+        [
+            "During these times",
+            "ms-settings:quietmomentsscheduled"
+        ],
+        [
+            "Encryption",
+            "ms-settings:deviceencryption"
+        ],
+        [
+            "Focus assist",
+            "ms-settings:quiethours"
+        ],
+        [
+            "Graphics settings",
+            "ms-settings:display-advancedgraphics"
+        ],
+        [
+            "Graphics default settings",
+            "ms-settings:display-advancedgraphics-default"
+        ],
+        [
+            "Multitasking",
+            "ms-settings:multitasking"
+        ],
+        [
+            "Night light settings",
+            "ms-settings:nightlight"
+        ],
+        [
+            "Project to this PC",
+            "ms-settings:projec"
+        ]
+    ],
+    "Nearby sharing": [
+        [
+            "Shared experiences",
+            "ms-settings:crossdevice"
+        ],
+        [
+            "Tablet mode",
+            "ms-settings:tabletmode"
+        ],
+        [
+            "Taskbar",
+            "ms-settings:taskbar"
+        ],
+        [
+            "Notifications & actions",
+            "ms-settings:notifications"
+        ],
+        [
+            "Remote Desktop",
+            "ms-settings:remotedesktop"
+        ],
+        [
+            "Phone",
+            "ms-settings:phone"
+        ],
+        [
+            "Power & sleep",
+            "ms-settings:powersleep"
+        ],
+        [
+            "Sound",
+            "ms-settings:sound"
+        ],
+        [
+            "Sound devices",
+            "ms-settings:sound-devices"
+        ],
+        [
+            "Storage",
+            "ms-settings:storagesense"
+        ],
+        [
+            "Storage Sense",
+            "ms-settings:storagepolicies"
+        ],
+        [
+            "Storage recommendations",
+            "ms-settings:storagerecommendations"
+        ],
+        [
+            "Disks & volumes",
+            "ms-settings:disksandvolumes"
+        ]
+    ],
+    "Time & language": [
+        [
+            "Date & time",
+            "ms-settings:dateandtime"
+        ],
+        [
+            "Language & region",
+            "ms-settings:keyboard"
+        ],
+        [
+            "Microsoft Pinyin input method",
+            "ms-settings:regionlanguage-chsime-pinyin"
+        ],
+        [
+            "Professional dictionary",
+            "ms-settings:regionlanguage-chsime-pinyin-domainlexicon"
+        ],
+        [
+            "Key settings (e.g., hotkeys for switching between Chinese/English modes)",
+            "ms-settings:regionlanguage-chsime-pinyin-keyconfig"
+        ],
+        [
+            "User-defined phrases",
+            "ms-settings:regionlanguage-chsime-pinyin-udp"
+        ],
+        [
+            "Speech",
+            "ms-settings:speech"
+        ]
+    ],
+    "Update & Security": [
+        [
+            "Activation",
+            "ms-settings:activation"
+        ],
+        [
+            "Backup",
+            "ms-settings:backup"
+        ],
+        [
+            "Delivery Optimization",
+            "ms-settings:delivery-optimization"
+        ],
+        [
+            "Find My Device",
+            "ms-settings:findmydevice"
+        ],
+        [
+            "For developers",
+            "ms-settings:developers"
+        ],
+        [
+            "Recovery",
+            "ms-settings:recovery"
+        ],
+        [
+            "Security key enrollment",
+            "ms-settings:signinoptions-launchsecuritykeyenrollment"
+        ],
+        [
+            "Troubleshoot",
+            "ms-settings:troubleshoot"
+        ],
+        [
+            "Windows Security",
+            "ms-settings:windowsdefender"
+        ],
+        [
+            "Windows Insider Program",
+            "ms-settings:windowsinsider"
+        ],
+        [
+            "Windows Update",
+            "ms-settings:windowsupdate"
+        ],
+        [
+            "Windows Update - Advanced options",
+            "ms-settings:windowsupdate-options"
+        ],
+        [
+            "Windows Update - Optional updates",
+            "ms-settings:windowsupdate-optionalupdates"
+        ],
+        [
+            "Windows Update - Restart options",
+            "ms-settings:windowsupdate-restartoptions"
+        ],
+        [
+            "Windows Update - Update history",
+            "ms-settings:windowsupdate-history"
+        ]
+    ]
+}

@@ -11,9 +11,9 @@ class Personalization:
         """
         ### 预先在输入框中插入默认值
         """
-        self.window_alpha_entry.insert(0, str(jsonSettings['window_alpha']))
-        self.window_x_entry.insert(0, str(jsonSettings['window_x']))
-        self.window_y_entry.insert(0, str(jsonSettings['window_y']))
+        self.window_alpha_entry.insert(0, str(jsonSettings['window']['alpha']))
+        self.window_x_entry.insert(0, str(jsonSettings['window']['length']))
+        self.window_y_entry.insert(0, str(jsonSettings['window']['width']))
 
 
     def enter(self) -> None:

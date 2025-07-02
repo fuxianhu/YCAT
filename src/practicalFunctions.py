@@ -14,8 +14,12 @@ def getSettingsJson() -> dict | int:
     try:
         f = ParseJSON(f"{folder}/language/{jsonSettings['language']}_Settings.json")
     except FileNotFoundError as err:
+        if jsonSettings['language'] == 'zh-CN':
+            return -1
         log({lang['clear_log_error']}, f"找不到'{jsonSettings['language']}_Setting.json'文件，正在尝试使用zh-CN语言...", popup=False)
     except Exception as err:
+        if jsonSettings['language'] == 'zh-CN':
+            return -1
         log({lang['clear_log_error']}, f"无法读取'{jsonSettings['language']}_Setting.json'文件，正在尝试使用zh-CN语言...", popup=False)
 
     if f == None:
@@ -25,6 +29,8 @@ def getSettingsJson() -> dict | int:
             log({lang['clear_log_error']}, f"找不到'zh-CN_Setting.json'文件，无法显示文本。", popup=False)
         except Exception as err:
             log({lang['clear_log_error']}, f"无法读取'zh-CN_Setting.json'文件，无法显示文本。", popup=False)
+        else:
+            return f
     else:
         return f
     return -1
@@ -333,7 +339,7 @@ class MinecraftLitematicaMaterialListCsvToExcelConverter:
         self.setDefaultPathButton_1 = Button(self.win, text=lang['set_default_path_button_text'], command=self.setDefaultPath_1)
         self.setDefaultPathButton_1.pack()
 
-        self.path_1 = Label(self.win, text=self.csv_file_path)
+        self.path_1 = Label(self.win, text=lang['path'] + self.csv_file_path + '\n', font=("黑体", 10))
         self.path_1.pack()
 
         self.selectExcelSavePathButton = Button(self.win, text=lang['select_excel_save_path_button_text'], command=self.selectExcelSavePath)
@@ -342,11 +348,11 @@ class MinecraftLitematicaMaterialListCsvToExcelConverter:
         self.setDefaultPathButton_2 = Button(self.win, text=lang['set_default_path_button_text'], command=self.setDefaultPath_2)
         self.setDefaultPathButton_2.pack()
 
-        self.path_2 = Label(self.win, text=self.csv_file_path)
+        self.path_2 = Label(self.win, text=lang['path'] + self.excel_save_path + '\n', font=("黑体", 10))
         self.path_2.pack()
 
         self.convertButton = Button(self.win, text=lang['convert_button_text'], command=lambda: self.converter(self.csv_file_path, self.excel_save_path))
-        self.convertButton.pack(side=BOTTOM)
+        self.convertButton.pack()
 
         self.win.mainloop()
 
